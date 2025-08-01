@@ -8,13 +8,13 @@ Team members can install directly from your repository:
 
 ```bash
 # Install latest version
-pip install git+https://github.com/NapthaAI/mcp-useability-audit-agent.git
+pip install git+https://github.com/iamksuresh/cognitive-observability-AI-agent-for-mcp.git
 
 # Install with all features
-pip install "git+https://github.com/NapthaAI/mcp-useability-audit-agent.git[all]"
+pip install "git+https://github.com/iamksuresh/cognitive-observability-AI-agent-for-mcp.git[all]"
 
 # Install specific branch/tag
-pip install git+https://github.com/NapthaAI/mcp-useability-audit-agent.git@main
+pip install git+https://github.com/iamksuresh/cognitive-observability-AI-agent-for-mcp.git@main
 ```
 
 ### Option B: Build and Share Wheel Files
@@ -50,7 +50,7 @@ pip install -i https://pypi.internal.company.com mcp-audit-agent
 
 ```bash
 # One-liner for team members
-pip install "git+https://github.com/NapthaAI/mcp-useability-audit-agent.git[all]"
+pip install "git+https://github.com/iamksuresh/cognitive-observability-AI-agent-for-mcp.git[all]"
 
 # If commands not found (macOS), add Python framework to PATH:
 echo 'export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:$PATH"' >> ~/.zshrc
@@ -84,7 +84,7 @@ For team members who want to contribute:
 
 ```bash
 # Clone and setup dev environment
-git clone https://github.com/NapthaAI/mcp-useability-audit-agent.git
+git clone https://github.com/iamksuresh/cognitive-observability-AI-agent-for-mcp.git
 cd mcp-useability-audit-agent
 
 # Install in development mode
@@ -166,7 +166,7 @@ mcp-audit-daemon --monitor-all-hosts
 3. **Permission errors**
    ```bash
    # Install for user only
-   pip install --user "git+https://github.com/NapthaAI/mcp-useability-audit-agent.git"
+   pip install --user "git+https://github.com/iamksuresh/cognitive-observability-AI-agent-for-mcp.git"
    ```
 
 4. **Dependencies conflicts**
@@ -175,7 +175,7 @@ mcp-audit-daemon --monitor-all-hosts
    python -m venv mcp-audit-env
    source mcp-audit-env/bin/activate  # Linux/Mac
    # mcp-audit-env\Scripts\activate  # Windows
-   pip install "git+https://github.com/NapthaAI/mcp-useability-audit-agent.git[all]"
+   pip install "git+https://github.com/iamksuresh/cognitive-observability-AI-agent-for-mcp.git[all]"
    ```
 
 ## Team Slack/Communication

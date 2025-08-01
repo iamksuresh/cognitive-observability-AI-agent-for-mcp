@@ -3,7 +3,7 @@ name = "mcp-audit-agent"
 version = "0.1.0"
 description = "Cognitive observability for AI agents interacting with MCP servers"
 authors = [
-    {name = "Suresh Jain", email = "suresh@naptha.ai"}
+    {name = "Suresh Jain", email = "suresh.jain@ymail.com"}
 ]
 readme = "README.md"
 license = {text = "MIT"}
@@ -79,9 +79,8 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/NapthaAI/mcp-useability-audit-agent.git"
-Documentation = "https://github.com/NapthaAI/mcp-useability-audit-agent/blob/main/README.md"
-Repository = "https://github.com/NapthaAI/mcp-useability-audit-agent"
+Homepage = "https://github.com/iamksuresh/cognitive-observability-AI-agent-for-mcp.git"
+Repository = "https://github.com/iamksuresh/cognitive-observability-AI-agent-for-mcp.git"
 
 [project.scripts]
 mcp-audit = "mcp_audit.cli:main"

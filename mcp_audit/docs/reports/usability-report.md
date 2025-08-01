@@ -350,7 +350,7 @@ When multiple servers are analyzed:
 
 ### File Location
 ```
-/Users/sureshjain/naptha/test/usability_report_20250730_201716.json
+/<FOLDER_PATH>/usability_report_20250730_201716.json
 ```
 
 ### Key Sections in Sample Report

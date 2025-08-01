@@ -281,7 +281,7 @@ Detailed tracking of MCP tool executions and event timeline:
 
 ### File Location
 ```
-/Users/sureshjain/naptha/test/detailed_report_20250730_165218.json
+/<PWD>/detailed_report_20250730_165218.json
 ```
 
 ### Key Sections in Sample Report
