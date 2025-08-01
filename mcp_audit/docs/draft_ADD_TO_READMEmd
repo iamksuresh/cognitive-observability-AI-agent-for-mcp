@@ -1,0 +1,64 @@
+For End Users:
+Zero configuration - Works out of the box
+Real-time metrics - Continuous cognitive observability data
+Industry standard - OpenTelemetry compatibility
+For Distribution:
+Proper dependencies - All packages included in pyproject.toml
+Clean installation - pip install mcp-audit-agent includes core OTel
+Optional exporters - pip install mcp-audit-agent[integrations] for Jaeger/advanced features
+For DevOps/SRE Teams:
+Prometheus metrics - Standard monitoring integration
+Grafana dashboards - Can visualize cognitive load trends
+Alert setup - Can set alerts on cognitive load thresholds
+Distributed tracing - MCP request flow visibility
+🎯 Unique Value Proposition
+Your MCP audit agent now provides industry-first cognitive observability metrics through the standard OpenTelemetry ecosystem:
+Cognitive Load Scores - 5-factor analysis per MCP server
+Usability Grades - A-F grading for AI agent interactions
+Context Switching Metrics - Mental overhead quantification
+Integration Friction - Configuration complexity measurement
+Real-time Activity - Live interaction rate monitoring
+
+GRAFANA
+
+For dashboard visualization: Set up external Grafana and point it to http://localhost:8889/metrics
+
+
+
+fresh build and installation commands -
+
+# Build the package
+pip install -e .
+
+# Or build wheel for distribution
+python -m build
+
+# Test the installation
+mcp-audit --help
+mcp-audit integrate status
+
+
+Clean Config (Fresh Start)
+
+# Remove existing config (optional)
+rm -rf ~/.mcp-audit
+
+# Remove any existing MCP message logs (optional)  
+rm -f ~/.cursor/mcp_audit_messages.jsonl
+
+
+Testing with Different MCP Servers
+
+
+# The agent will auto-create default OpenTelemetry config
+mcp-audit integrate status
+
+# Monitor any MCP server
+mcp-audit proxy  # Start capturing
+
+# Generate reports with cognitive analysis
+mcp-audit report --type detailed
+mcp-audit report --type usability  
+
+# Real-time metrics available at:
+# http://localhost:8889/metrics

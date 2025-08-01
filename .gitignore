@@ -1,0 +1,262 @@
+# =============================================================================
+# MCP Usability Audit Agent - .gitignore
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+# dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# -----------------------------------------------------------------------------
+# MCP Audit Data & Generated Files (Project-Specific)
+# -----------------------------------------------------------------------------
+# Captured MCP messages and logs
+*.jsonl
+mcp_audit_messages.jsonl
+mcp_audit_proxy.log
+
+# Generated audit reports
+audit_report_*.json
+real_*.json
+component_trace_*.json
+complete_observability_*.json
+integrated_*.json
+trace_*.json
+demo_*.json
+
+# Report directories (keep structure, ignore contents)
+audit_reports/*
+!audit_reports/.gitkeep
+mcp-audit-reports/*
+!mcp-audit-reports/.gitkeep
+
+# Backup files from scripts
+*.backup.*
+
+# Temporary analysis files
+*.tmp
+*.temp
+temp_*
+analysis_*.json
+
+# -----------------------------------------------------------------------------
+# Node.js (for cursor-plugin)
+# -----------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Optional: Keep package-lock.json for reproducible builds
+# Uncomment next line if you want to ignore it
+# package-lock.json
+
+# -----------------------------------------------------------------------------
+# IDE & Editor Files
+# -----------------------------------------------------------------------------
+# VSCode / Cursor
+.vscode/
+.cursor/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------------------------------------------------------------
+# Operating System Files
+# -----------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.exe
+*.msi
+*.msix
+*.msm
+*.msp
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# -----------------------------------------------------------------------------
+# Logs & Debugging
+# -----------------------------------------------------------------------------
+*.log
+logs/
+*.out
+
+# -----------------------------------------------------------------------------
+# Security & Secrets
+# -----------------------------------------------------------------------------
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# API keys and secrets
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+
+# -----------------------------------------------------------------------------
+# Jupyter Notebook
+# -----------------------------------------------------------------------------
+.ipynb_checkpoints
+
+# -----------------------------------------------------------------------------
+# Documentation Build Files
+# -----------------------------------------------------------------------------
+docs/_build/
+site/
+
+# -----------------------------------------------------------------------------
+# Archive Files
+# -----------------------------------------------------------------------------
+*.zip
+# *.tar.gz
+*.rar
+*.7z
+# *.whl
+
+# =============================================================================
+# KEEP THESE FILES (Important for the project)
+# =============================================================================
+# Core source code
+!mcp_audit/
+!*.py
+!*.md
+!*.json (package.json, mcp.json configs)
+!*.txt (requirements.txt)
+!*.sh (scripts)
+!*.toml (pyproject.toml)
+!*.yml
+!*.yaml
+
+# Configuration files
+!.gitignore
+!requirements.txt
+!setup.py
+!pyproject.toml
+!cursor-plugin/package.json
+!cursor-plugin/tsconfig.json
+!cursor-plugin/webpack.config.js
+
+# Documentation
+!README.md
+!REPORT_GENERATION_COMMANDS.md
+!docs/
+
+# Scripts
+!*.sh
+!reset_data.sh
+!uninstall_cursor_agent.sh 
+
+# Development and conversation notes
+local/ 
+
+
